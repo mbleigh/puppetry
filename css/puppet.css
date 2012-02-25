@@ -1,0 +1,156 @@
+/* line 4, ../sass/puppet.sass */
+.puppet {
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  -webkit-animation: bob 1s infinite;
+}
+/* line 9, ../sass/puppet.sass */
+.puppet div {
+  background: black !important;
+}
+
+/* line 12, ../sass/puppet.sass */
+.trunk {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  width: 50px;
+  height: 80px;
+  position: relative;
+  background: black;
+}
+
+/* line 19, ../sass/puppet.sass */
+.head, .arm, .leg {
+  position: absolute;
+}
+
+/* line 22, ../sass/puppet.sass */
+.head {
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  -ms-border-radius: 25px;
+  -o-border-radius: 25px;
+  border-radius: 25px;
+  width: 50px;
+  height: 50px;
+  background: blue;
+}
+
+/* line 28, ../sass/puppet.sass */
+.arm {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transform-origin: 50% 10px;
+  -moz-transform-origin: 50% 10px;
+  -ms-transform-origin: 50% 10px;
+  -o-transform-origin: 50% 10px;
+  transform-origin: 50% 10px;
+  background: red;
+  width: 25px;
+  height: 100px;
+  top: 0;
+  -webkit-animation: tilt 1s infinite;
+}
+
+/* line 37, ../sass/puppet.sass */
+.leg {
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transform-origin: 50% 10px;
+  -moz-transform-origin: 50% 10px;
+  -ms-transform-origin: 50% 10px;
+  -o-transform-origin: 50% 10px;
+  transform-origin: 50% 10px;
+  background: green;
+  width: 25px;
+  height: 100px;
+  top: 68px;
+  -webkit-animation: tilt 2s infinite;
+}
+
+/* line 46, ../sass/puppet.sass */
+.head {
+  top: -50px;
+  -webkit-animation: bob 2s infinite;
+}
+
+/* line 50, ../sass/puppet.sass */
+.arm.left {
+  left: -12px;
+  -webkit-animation-delay: 0.5s;
+}
+
+/* line 54, ../sass/puppet.sass */
+.arm.right {
+  right: -12px;
+}
+
+/* line 57, ../sass/puppet.sass */
+.leg.left {
+  left: 0;
+}
+
+/* line 60, ../sass/puppet.sass */
+.leg.right {
+  left: 25px;
+  -webkit-animation-delay: 1s;
+}
+
+@-webkit-keyframes tilt {
+  /* line 65, ../sass/puppet.sass */
+  from, to {
+    -webkit-transform: rotate(-20deg);
+    -moz-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    -o-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+  }
+
+  /* line 67, ../sass/puppet.sass */
+  50% {
+    -webkit-transform: rotate(20deg);
+    -moz-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    -o-transform: rotate(20deg);
+    transform: rotate(20deg);
+  }
+}
+
+@-webkit-keyframes bob {
+  /* line 71, ../sass/puppet.sass */
+  from, to {
+    -webkit-transform: "";
+    -moz-transform: "";
+    -ms-transform: "";
+    -o-transform: "";
+    transform: "";
+  }
+
+  /* line 73, ../sass/puppet.sass */
+  25% {
+    -webkit-transform: translateY(5px);
+    -moz-transform: translateY(5px);
+    -ms-transform: translateY(5px);
+    -o-transform: translateY(5px);
+    transform: translateY(5px);
+  }
+
+  /* line 75, ../sass/puppet.sass */
+  75% {
+    -webkit-transform: translateY(-5px);
+    -moz-transform: translateY(-5px);
+    -ms-transform: translateY(-5px);
+    -o-transform: translateY(-5px);
+    transform: translateY(-5px);
+  }
+}
